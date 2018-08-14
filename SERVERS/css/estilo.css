@@ -1,0 +1,115 @@
+/* Formatação MENU */
+/*{margin: 0; padding: 0;} /* Colocado para ser o Ponto esquerto alto do monitor */
+body{
+  background-color: #ffffff;
+  color: rgba(0,0,0,1);
+}
+p{
+  margin: 0px;
+  padding: 0px;
+  text-align: justify;
+  text-indent: 25px;
+}
+/* */
+.menu{
+  margin: 0;
+  padding: 0;
+  list-style:none;
+  border:2px solid #c0c0c0;
+  float:left;
+}
+/* */
+.menu li{
+  position:relative;
+  float:left;
+  border-right:3px solid #c0c0c0;
+}
+.menu li a{
+  color:#333;
+  text-decoration:none;
+  padding:5px 10px;
+  display:block;
+}
+
+.menu li a:hover{
+  background:#333;
+  color:#fff;
+}
+.menu li  ul{
+  position:absolute;
+  top: 28px;
+  background-color:#fff;
+  display:none;
+}
+.menu li:hover ul, .menu li.over ul{
+  display:block;
+}
+.menu li ul li{
+  border:2px solid #c0c0c0;
+  background-color: #fff;
+  display:block;
+  width:150px;
+}
+
+/* Formatação Botão */
+.bt-off {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #123d54;
+  padding: 10px 20px;
+  background: -moz-linear-gradient(
+    top,
+    #ff0000 0%,
+    #ff0303);
+  background: -webkit-gradient(
+    linear, left top, left bottom,
+    from(#ff0000),
+    to(#ff0303));
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #0a0a0a;
+  -moz-box-shadow:
+    0px 1px 3px rgba(230,37,230,0.5),
+    inset 0px 0px 1px rgba(255,255,255,1);
+  -webkit-box-shadow:
+    0px 1px 3px rgba(230,37,230,0.5),
+    inset 0px 0px 1px rgba(255,255,255,1);
+  box-shadow:
+    0px 1px 3px rgba(230,37,230,0.5),
+    inset 0px 0px 1px rgba(255,255,255,1);
+  text-shadow:
+    0px -1px 0px rgba(242,242,242,0.7),
+    0px 1px 0px rgba(255,255,255,0.3);
+}
+.bt-on {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #000000;
+  padding: 10px 20px;
+  background: -moz-linear-gradient(
+    top,
+    #00ff00 0%,
+    #00ff00);
+  background: -webkit-gradient(
+    linear, left top, left bottom,
+    from(#00ff00),
+    to(#00ff00));
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #050505;
+  -moz-box-shadow:
+    0px 1px 3px rgba(255,255,255,0.5),
+    inset 0px 0px 2px rgba(255,255,255,1);
+  -webkit-box-shadow:
+    0px 1px 3px rgba(255,255,255,0.5),
+    inset 0px 0px 2px rgba(255,255,255,1);
+  box-shadow:
+    0px 1px 3px rgba(255,255,255,0.5),
+    inset 0px 0px 2px rgba(255,255,255,1);
+  text-shadow:
+    0px -1px 0px rgba(255,255,255,0.2),
+    0px 1px 0px rgba(255,255,255,1);
+}
+

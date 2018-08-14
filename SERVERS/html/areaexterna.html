@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<link rel="stylesheet" href="../css/estilo.css" />
+<head>
+  <meta charset="UTF-8">
+  <title>Área Externa</title>
+</head>
+<body>
+<nav id="mãe">
+  <nav>
+    <ul class="menu">
+      <li><a href="../index.html">Home</a></li>
+    </ul>
+  </nav>
+  <nav id="corpo">
+    <form method="post" action="controle.php">
+    <br/><h1>Menu Área Externa</h1>
+    <p>Luz Garagem:
+      <button class="bt-on" type="submit" name="estado" value="LLG">On</button>
+      <button class="bt-off" type="submit" name="estado" value="DLG">Off</button>
+      </p>
+    <p>Luz Fundos:
+      <button class="bt-on" type="submit" name="estado" value="LLFU">On</button>
+      <button class="bt-off" type="submit" name="estado" value="DLFU">Off</button>
+    </p>
+    <p>Luz Frente:
+      <button class="bt-on" type="submit" name="estado" value="LLFR">On</button>
+      <button class="bt-off" type="submit" name="estado" value="DLFR">Off</button>
+    </p>
+    </form>
+  </nav>
+</nav>
+</body>
+</html>
