@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<link rel="stylesheet" href="../css/bootstrap.min.css"/>
+<head>
+  <meta charset="UTF-8">
+  <title>Cozinha</title>
+</head>
+<body>
+<div class="container">
+    <div class="btn-group" role="group" aria-label="Dropdrown">
+        <button type="button" class="btn btn-outline-secondary"><a href="dashboard.html">Home</a></button>
+        <button type="button" class="btn btn-outline-secondary"><a href="informacoes.html">Informações</a></button>
+        <button type="button" class="btn btn-outline-secondary"><a href="sala.html">Sala</a></button>
+        <button type="button" class="btn btn-outline-secondary"><a href="cozinha.html">Cozinha</a></button>
+        <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"><a href="/quartos">Quartos</a></button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <a class="dropdown-item" href="quartos.html">Quartos</a>
+                <a class="dropdown-item" href="quartocasal.html">Quarto Casal</a>
+                <a class="dropdown-item" href="quartosolt1.html">Quarto Solteiro 1</a>
+                <a class="dropdown-item" href="quartasolt2.html">Quarto Solteiro 2</a>
+            </div>
+        </div>
+        <button type="button" class="btn btn-outline-secondary"><a href="lavanderia.html">Lavanderia</a></button>
+        <button type="button" class="btn btn-outline-secondary"><a href="areaexterna.html">Área Externa</a></button>
+        <button type="button" class="btn btn-outline-secondary"><a href="ajuda.html">Ajuda</a></button>
+        <button type="button" class="btn btn-outline-secondary"><a href="contato.html">Contato</a></button>
+    </div>
+    <h2> Menu Cozinha</h2>
+    <form method="post" action="controle.php">
+    <p>Geladeira:
+        <button class="btn btn-success" type="submit" value="LGC" name="estado">On</button>
+        <button class="btn btn-danger" type="submit" value="DGC" name="estado">Off</button>
+    </p>
+    <p>Luz:
+        <button class="btn btn-success" type="submit" value="LLC" name="estado">On</a>
+        <button class="btn btn-danger" type="submit" value="DLC" name="estado">Off</button>
+    </p>
+    <p>Torneira Elétrica:
+        <button class="btn btn-success" type="submit" value="LTC" name="estado">On</button>
+        <button class="btn btn-danger" type="submit" value="DTC" name="estado">Off</button>
+    </p>
+    </form>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap-notify.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.mask.min.js"></script>
+    <script type="text/javascript">
+        Esp= function (){
+        <?php require('../controle.php');
+            print('$ESP'); ?>"
+        }
+        PortEsp = function (){
+        <?php require('../controle.php');
+            print('$portEsp'); ?>
+        }
+        PC = function (){
+        <?php require('../controle.php');
+            print('$IPcomp'); ?>
+        }
+    </script>
+    <title>Informações</title>
+</head>
+<body>
+<div class="container">
+    <div class="btn-group" role="group" aria-label="Dropdrown">
+        <button type="button" class="btn btn-outline-secondary"><a href="../dashboard.html">Home</a></button>
+        <button type="button" class="btn btn-outline-secondary"><a href="../informacoes.php">Informações</a></button>
+        <button type="button" class="btn btn-outline-secondary"><a href="sala.html">Sala</a></button>
+        <button type="button" class="btn btn-outline-secondary"><a href="cozinha.html">Cozinha</a></button>
+        <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"><a href="/quartos">Quartos</a></button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <a class="dropdown-item" href="quartos.html">Quartos</a>
+                <a class="dropdown-item" href="quartocasal.html">Quarto Casal</a>
+                <a class="dropdown-item" href="quartosolt1.html">Quarto Solteiro 1</a>
+                <a class="dropdown-item" href="quartasolt2.html">Quarto Solteiro 2</a>
+            </div>
+        </div>
+        <button type="button" class="btn btn-outline-secondary"><a href="lavanderia.html">Lavanderia</a></button>
+        <button type="button" class="btn btn-outline-secondary"><a href="areaexterna.html">Área Externa</a></button>
+    </div>
+        <p><text> Aqui o IP da Placa: <? require_once("controle.php"); echo $ESP; ?> :
+            <? require_once("controle.php"); echo $portEsp; ?> </p>
+        <p><text> Aqui o IP do Computador: <? require_once("controle.php"); echo $PC; ?> </text></p>
+</div>
+<script src="../../js/jquery-3.2.1.min.js"></script>
+<script src="../../js/popper.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>
+
